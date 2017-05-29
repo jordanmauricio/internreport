@@ -6,10 +6,10 @@ class ListOfAssignments extends Component {
         return (
             <div>
                 <ul>
-                    <li key="1"><Link to={"/assignments/1"}>Player 1</Link></li>
-                    <li key="2"><Link to={"/assignments/2"}>Player 2</Link></li>
-                    <li key="3"><Link to={"/assignments/3"}>Player 3</Link></li>
-                    <li key="4"><Link to={"/assignments/4"}>Player 4</Link></li>
+                    <li key="1"><Link to={"/assignments/1"}>Assignment 1</Link></li>
+                    <li key="2"><Link to={"/assignments/2"}>Assignment 2</Link></li>
+                    <li key="3"><Link to={"/assignments/3"}>Assignment 3</Link></li>
+                    <li key="4"><Link to={"/assignments/4"}>Assignment 4</Link></li>
                 </ul>
             </div>
         );
