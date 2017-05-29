@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "./Home";
-import Introduction from "./Introduction";
-import Assignments from "./Assignments";
-import Conclusion from "./Conclusion";
+import Introduction from "../introduction/Introduction";
+import Assignments from "../assignments/Assignments";
+import Conclusion from "../conclusion/Conclusion";
 
 class Main extends Component {
     render() {
