@@ -7,7 +7,7 @@ class Header extends Component {
             <header>
                 <nav>
                     <ul>
-                        <li><Link to ="/">Home</Link></li>
+                        <li><Link to="/">Home</Link></li>
                         <li><Link to="/introduction">Introduction</Link></li>
                         <li><Link to="/assignments">Assignments</Link></li>
                         <li><Link to="/conclusion">Conclusion</Link></li>
