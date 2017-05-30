@@ -23,7 +23,7 @@ class Header extends Component {
             <sidebar className={openSidebar}>
                 <div className={`hamburger-toggle ${openSidebar}`} onClick={this.handleSidebar}><span></span><span></span><span></span></div>
                 <nav className="content">
-                    <ul>
+                    <ul onClick={this.handleSidebar}>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/introduction">Introduction</Link></li>
                         <li><Link to="/assignments">Assignments</Link></li>
