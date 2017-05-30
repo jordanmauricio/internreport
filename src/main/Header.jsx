@@ -21,7 +21,7 @@ class Header extends Component {
         let openSidebar = this.state.shouldShowSidebar ? "open" : "";
         return (
             <sidebar className={openSidebar}>
-                <div className={`hamburger-toggle ${openSidebar}`} onClick={this.handleSidebar}><span></span><span></span><span></span></div>
+                <button className={`is-primary hamburger-toggle ${openSidebar}`} onClick={this.handleSidebar}><span></span><span></span><span></span></button>
                 <nav>
                     <ul>
                         <Link to="/"><li>Home</li></Link>

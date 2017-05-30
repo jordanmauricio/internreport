@@ -1,3 +1,5 @@
+@import "../node_modules/bulma/bulma.sass";
+
 sidebar {
     position:fixed;
     top:0;
@@ -5,12 +7,12 @@ sidebar {
     background-color:#ccc;
     width:250px;
     height:100%;
-    transform: translateX(0px);
+    transform: translateX(250px);
     transition: .5s ease-in-out;
 }
 
 sidebar.open{
-  transform: translateX(250px);
+  transform: translateX(0px);
 }
 
 ul {
@@ -32,7 +34,7 @@ li:hover {
   height: 20px;
   position: relative;
   top:15px;
-  left:200px;
+  left:-50px;
   transform: translateX(0px);
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -46,7 +48,7 @@ li:hover {
 }
 
 .hamburger-toggle.open {
-  transform: translateX(-230px);
+  transform: translateX(250px);
 }
 
 .hamburger-toggle span {
@@ -90,7 +92,7 @@ li:hover {
 
 .hamburger-toggle.open span:nth-child(2) {
   opacity: 0;
-  left: 80px;
+  left: 30px;
 }
 
 .hamburger-toggle.open span:nth-child(3) {
