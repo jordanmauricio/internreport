@@ -6,10 +6,10 @@ class ListOfAssignments extends Component {
         return (
             <div>
                 <ul>
-                    <li key="1"><Link to={"/assignments/1"}>Assignment 1</Link></li>
-                    <li key="2"><Link to={"/assignments/2"}>Assignment 2</Link></li>
-                    <li key="3"><Link to={"/assignments/3"}>Assignment 3</Link></li>
-                    <li key="4"><Link to={"/assignments/4"}>Assignment 4</Link></li>
+                    <li key="1"><Link to={"/assignments/unicarriers"}>Unicarriers Planning Tool</Link></li>
+                    <li key="2"><Link to={"/assignments/feedbacktool"}>Feedback Tool</Link></li>
+                    <li key="3"><Link to={"/assignments/internshipreport"}>Internship Report</Link></li>
+                    <li key="4"><Link to={"/assignments/extra"}>Additional Skills</Link></li>
                 </ul>
             </div>
         );

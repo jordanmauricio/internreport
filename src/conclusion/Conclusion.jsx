@@ -1,15 +1,20 @@
 import React, { Component } from "react";
+import { Switch, Route } from "react-router-dom";
+import Opinions from "./Opinions";
+import Future from "./Future";
+import Bye from "./Bye";
+import NotFound from "../main/NotFound";
 
 class Conclusion extends Component {
     render() {
         return (
             <div>
-                <h1>Conclusion</h1>
-                <ul>
-                    <li>6/5 @ Evergreens</li>
-                    <li>4/6 @ Rochester</li>
-                    <li>8/6 @ The Garden Wall</li>
-                </ul>
+                <Switch>
+                    <Route exact path="/conclusion" component={Opinions}/>
+                    <Route path="/conclusion/future" component={Future}/>
+                    <Route path="/conclusion/bye" component={Bye}/>
+                    <Route component={NotFound}/>
+                </Switch>
             </div>
         );
     }

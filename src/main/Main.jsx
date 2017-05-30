@@ -4,6 +4,7 @@ import Home from "./Home";
 import Introduction from "../introduction/Introduction";
 import Assignments from "../assignments/Assignments";
 import Conclusion from "../conclusion/Conclusion";
+import NotFound from "./NotFound";
 
 class Main extends Component {
     render() {
@@ -14,6 +15,7 @@ class Main extends Component {
                     <Route path="/introduction" component={Introduction}/>
                     <Route path="/assignments" component={Assignments}/>
                     <Route path="/conclusion" component={Conclusion}/>
+                    <Route component={NotFound} />
                 </Switch>
             </div>
         );
