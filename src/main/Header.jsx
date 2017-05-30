@@ -20,14 +20,14 @@ class Header extends Component {
     render() {
         let openSidebar = this.state.shouldShowSidebar ? "open" : "";
         return (
-            <sidebar>
+            <sidebar className={openSidebar}>
                 <div className={`hamburger-toggle ${openSidebar}`} onClick={this.handleSidebar}><span></span><span></span><span></span></div>
                 <nav>
                     <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/introduction">Introduction</Link></li>
-                        <li><Link to="/assignments">Assignments</Link></li>
-                        <li><Link to="/conclusion">Conclusion</Link></li>
+                        <Link to="/"><li>Home</li></Link>
+                        <Link to="/introduction"><li>Introduction</li></Link>
+                        <Link to="/assignments"><li>Assignments</li></Link>
+                        <Link to="/conclusion"><li>Conclusion</li></Link>
                     </ul>
                 </nav>
             </sidebar>
