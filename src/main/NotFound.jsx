@@ -5,7 +5,7 @@ class NotFound extends Component {
         return (
             <div>
                 <h1>404</h1>
-                <img src="https://68.media.tumblr.com/tumblr_m6qacqt4X21qe6n4co1_500.gif"/>
+                <img alt="Page not found" src="https://68.media.tumblr.com/tumblr_m6qacqt4X21qe6n4co1_500.gif"/>
             </div>
         );
     }
