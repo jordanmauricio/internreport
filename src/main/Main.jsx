@@ -5,11 +5,12 @@ import Introduction from "../introduction/Introduction";
 import Assignments from "../assignments/Assignments";
 import Conclusion from "../conclusion/Conclusion";
 import NotFound from "./NotFound";
+import "./Main.css";
 
 class Main extends Component {
     render() {
         return (
-            <div>
+            <div className="wrapper">
                 <Switch>
                     <Route exact path="/" component={Home}/>
                     <Route path="/introduction" component={Introduction}/>
