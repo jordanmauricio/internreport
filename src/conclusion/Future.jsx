@@ -6,8 +6,16 @@ class Future extends Component {
         return (
             <div>
                 <h1>Future</h1>
-                <p>Plans for the future, moving forward, things to learn, things to do</p>
-                <Link to="/conclusion/bye">Buh-bye</Link>
+                <p>What am I going to do next?</p>
+                <ul>
+                    <li>Learn Node by Wes Bos</li>
+                    <li>Learn Redux by Wes Bos</li>
+                    <li>Progressive Web Apps by Google Dev Team</li>
+                    <li>Clean Code by Uncle Bob</li>
+                    <li>Drupal 8</li>
+                    <li>Isomorphic apps</li>
+                </ul>
+                <div className="button"><p><Link to="/conclusion/bye">Buh-bye</Link></p></div>
             </div>
         );
     }
