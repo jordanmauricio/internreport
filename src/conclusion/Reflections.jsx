@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navigator from "../tools/Navigator";
 
-class Opinions extends Component {
+class Reflections extends Component {
     render() {
         return (
             <div>
@@ -48,4 +48,4 @@ class Opinions extends Component {
     }
 }
 
-export default Opinions;
+export default Reflections;
