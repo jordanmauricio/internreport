@@ -5,19 +5,21 @@ import Introduction from "../introduction/Introduction";
 import Assignments from "../assignments/Assignments";
 import Conclusion from "../conclusion/Conclusion";
 import NotFound from "./NotFound";
-import "./Main.css";
+import "../style/Main.css";
 
 class Main extends Component {
     render() {
         return (
             <div className="wrapper">
-                <Switch>
-                    <Route exact path="/" component={Home}/>
-                    <Route path="/introduction" component={Introduction}/>
-                    <Route path="/assignments" component={Assignments}/>
-                    <Route path="/conclusion" component={Conclusion}/>
-                    <Route component={NotFound} />
-                </Switch>
+                <div className="wrapper--container content">
+                    <Switch>
+                        <Route exact path="/" component={Home}/>
+                        <Route path="/introduction" component={Introduction}/>
+                        <Route path="/assignments" component={Assignments}/>
+                        <Route path="/conclusion" component={Conclusion}/>
+                        <Route component={NotFound} />
+                    </Switch>
+                </div>
             </div>
         );
     }

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
+
+.foofie {
+    font-family: "Source Sans Pro", sans-serif;
+    text-align:center;
+    background-color:#ecf0f1;
+    color:#7f8c8d;
+    padding: 15px 0px;
+    transition: color 0.5s ease;
+
+    .love {
+        color: #FFCDD2;
+        transition: color 0.5s ease;
+    }
+}
+
+.foofie:hover {
+    color:#34495e;
+    .love{
+        color:#e74c3c;
+    }
+}
