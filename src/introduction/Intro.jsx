@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import Navigator from "../tools/Navigator";
 
 class Intro extends Component {
     render() {
@@ -14,7 +14,7 @@ class Intro extends Component {
                     <li> And finally, the conclusion, where I will reflect on my time at TRIMM, followed by additional information and what I plan to do for the future after completing my internship.</li>
                 </ol>
                 <p>Enjoy!</p>
-                <div className="button"><p><Link to="/introduction/me">Go To About me &#10140;</Link></p></div>
+                <Navigator link="/introduction/me" text="Go To About me"/>
             </div>
         );
     }
