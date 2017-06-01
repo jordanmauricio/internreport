@@ -5,12 +5,12 @@ class Navigator extends Component {
     render(){
         if(this.props.type === "forward"){
             return(
-                <div className="button"><p><Link to={this.props.link}>{this.props.text} &#8594;</Link></p></div>
+                <div className="button"><p><Link to={this.props.link}>Next &#8594;</Link></p></div>
             );
         } 
         else if(this.props.type === "backwards"){
             return(
-                <div className="button"><p><Link to={this.props.link}>&#8592; {this.props.text}</Link></p></div>
+                <div className="button"><p><Link to={this.props.link}>&#8592; Back</Link></p></div>
             );
         } else {
             return(
@@ -22,7 +22,6 @@ class Navigator extends Component {
 
 Navigator.propTypes = {
     link: PropTypes.string.isRequired,
-    text: PropTypes.string,
     type: PropTypes.string
 };
 
