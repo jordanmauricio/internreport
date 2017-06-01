@@ -23,8 +23,10 @@ class Bye extends Component {
                     <li>Check out Arnoud’s Trigonia</li>
                 </ul>
 
-                <Navigator type="backwards" link="/conclusion/future"/>
-                <Navigator link="/" text="Back to Start"/>
+                <div className="nav-buttons">
+                    <Navigator type="backwards" link="/conclusion/future"/>
+                    <Navigator link="/" text="Back to Start"/>
+                </div>
             </div>
         );
     }

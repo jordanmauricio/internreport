@@ -29,9 +29,10 @@ class InternshipReport extends Component {
 
                 <p>The only issue will be to know where I would like to stop with the development. Of course anyone would like to transform their report into the most cool, best looking, interaction experimentation play ground that they can imagine. Therefore, I will be focusing on the content primarily, the text, and only when this has been implemented properly will I continue with the more fun features.</p>
 
-
-                <Navigator type="backwards" link="/assignments/feedbacktool"/>
-                <Navigator type="forward" link="/assignments/extra"/>
+                <div className="nav-buttons">
+                    <Navigator type="backwards" link="/assignments/feedbacktool"/>
+                    <Navigator type="forward" link="/assignments/extra"/>
+                </div>
             </div>
         );
     }

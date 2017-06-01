@@ -30,8 +30,10 @@ class FeedbackTool extends Component {
                 <p>This tool caused several headaches, but also several celebratory Pepsi’s. I have learned a lot building this project from scratch. Not just programming structures and design patterns, but at certain points I had to do a complete 180 on the way I was thinking, go back and restructure a significant portion of my code, before being able to continue.</p>
                 <p>The most important takeaway from this project must be planning ahead. As explained before, I’ve had to restructure and rebuild the application before I continued, this happened twice on a large scale, and a handful of times on a smaller scale. This came about because in the beginning (where of this happened) I was focusing on each individual component of the application, instead of focusing on the bigger picture, the application as a whole. In order to prevent this, I have decided that if an application’s scope seems to big to keep in your thoughts, it’s a very good idea to simply write out your logical structures and flow down on paper and analyzing that before continuing. Sometimes it might be better to calmly think through the problem for a day and save yourself a lot of time down the line, instead of jumping it and creating components immediately.</p>
                 
-                <Navigator type="backwards" link="/assignments/unicarriers"/>
-                <Navigator type="forward" link="/assignments/internshipreport"/>
+                <div className="nav-buttons">
+                    <Navigator type="backwards" link="/assignments/unicarriers"/>
+                    <Navigator type="forward" link="/assignments/internshipreport"/>
+                </div>
             </div>
         );
     }

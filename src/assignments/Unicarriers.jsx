@@ -24,8 +24,10 @@ class Unicarriers extends Component {
                 <p>Because of this, my first 2 weeks were spent learning these languages. But one cannot simply learn the tools, you need to build things with them. With that mentality, I jumped right into the project and started building where I could. In the beginning I did a lot of pair programming with Midas since there was an existing project already, but as time progressed, my understanding of the project greatly increased and I could finally start building my own components. </p>
                 <p>My main contribution to the tool would have to be the Filters sidebar. I built just about everything for it, with help from Mark and Arnoud whenever I ran into problems, or after their code review concluded that I can optimize my code. Moreover, I also handled the translations by introducing a simple-to-use system that Arnoud, Mark and Midas could easily import into their builds and use at their discretion. This system also allowed Peter to easily edit the translations when possible by having the text in a separate file alongside the code. Alongside the Filters bar and translations, I did a lot of bits and pieces as well in regards to the complete tool. </p>
 
-                <Navigator type="backwards" link="/introduction/trimm"/>
-                <Navigator type="forward" link="/assignments/feedbacktool"/>
+                <div className="nav-buttons">
+                    <Navigator type="backwards" link="/introduction/trimm"/>
+                    <Navigator type="forward" link="/assignments/feedbacktool"/>
+                </div>
             </div>
         );
     }

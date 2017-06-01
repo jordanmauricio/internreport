@@ -47,9 +47,10 @@ class AdditionalSkills extends Component {
                 <br/><strong>Virtual Machines + PM2</strong>
                 <p>Speaking of servers, there are several types. One of the ones I had worked with were Cloud servers and Virtual Machines. These are lightweight servers that, when properly configured, can run just about any application. PM2 on the other hand, is a process management system, specifically for Node-based applications. PM2 makes it surprisingly easy to deploy and run Node applications, whereas regular servers can be quite a hassle. Seeing as I’m a JavaScript developer (and therefore Node, eventually) this will be very useful to me moving forward.</p>
 
-
-                <Navigator type="backwards" link="/assignments/internshipreport"/>
-                <Navigator type="forward" link="/conclusion"/>
+                <div className="nav-buttons">
+                    <Navigator type="backwards" link="/assignments/internshipreport"/>
+                    <Navigator type="forward" link="/conclusion"/>
+                </div>
             </div>
         );
     }

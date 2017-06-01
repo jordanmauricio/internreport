@@ -41,8 +41,11 @@ class Reflections extends Component {
                     <li>Nerf guns can hurt</li>
                     <li>You can play darts anywhere</li>
                 </ol>
-                <Navigator type="backwards" link="/assignments/extra"/>
-                <Navigator type="forward" link="/conclusion/future"/>
+
+                <div className="nav-buttons">
+                    <Navigator type="backwards" link="/assignments/extra"/>
+                    <Navigator type="forward" link="/conclusion/future"/>
+                </div>
             </div>
         );
     }

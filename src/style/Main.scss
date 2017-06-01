@@ -20,6 +20,25 @@
     a {
         font-weight: 400 !important;
     }
+
+    .nav-buttons {
+        display:flex;
+        width:100%;
+        justify-content:space-between;
+    }
+
+    .start-button {
+
+        a {
+            padding:50px;
+        }
+    }
+
+    .start-button:hover {
+        a {
+            color:#fff;
+        }
+    }
 }
 
 .wrapper--container {

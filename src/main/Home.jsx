@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Navigator from "../tools/Navigator";
+import { Link } from "react-router-dom";
 
 class Home extends Component {
     render() {
@@ -7,7 +7,12 @@ class Home extends Component {
             <div>
                 <h1 className="center">Home</h1>
                 <p>Animation through transitions where the website goes from no-styling to looking nice.</p>
-                <Navigator link="/introduction" text="Start"/>
+
+                <div className="start-button has-text-centered">
+                    <div className="button is-primary is-outlined">
+                        <Link to="/introduction">Start</Link>
+                    </div>
+                </div>
             </div>
         );
     }

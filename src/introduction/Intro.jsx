@@ -14,8 +14,10 @@ class Intro extends Component {
                     <li> And finally, the conclusion, where I will reflect on my time at TRIMM, followed by additional information and what I plan to do for the future after completing my internship.</li>
                 </ol>
                 <p>Enjoy!</p>
-                <Navigator type="backwards" link="/" text="Go Back"/>
-                <Navigator type="forward" link="/introduction/me" text="Go To About me"/>
+                <div className="nav-buttons">
+                    <Navigator type="backwards" link="/" text="Go Back"/>
+                    <Navigator type="forward" link="/introduction/me" text="Go To About me"/>
+                </div>
             </div>
         );
     }

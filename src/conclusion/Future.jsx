@@ -30,8 +30,10 @@ class Future extends Component {
                 <br/><strong>Isomorphic Applications</strong>
                 <p>These are JavaScript applications that can run on both the Frontend and the Backend. It’s more a methodology and way of writing code than anything else. It’s a very nice next step after learning Node, in order to combine React and Node and be able to create universal applications that can run on just about any device, written entirely by JavaScript.</p>
                 
-                <Navigator type="backwards" link="/conclusion"/>
-                <Navigator type="forward" link="/conclusion/bye"/>
+                <div className="nav-buttons">
+                    <Navigator type="backwards" link="/conclusion"/>
+                    <Navigator type="forward" link="/conclusion/bye"/>
+                </div>
             </div>
         );
     }
