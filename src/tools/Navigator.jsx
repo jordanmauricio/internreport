@@ -3,15 +3,27 @@ import { Link } from "react-router-dom";
 
 class Navigator extends Component {
     render(){
-        return(
-            <div className="button"><p><Link to={this.props.link}>{this.props.text} &#10140;</Link></p></div>
-        );
+        if(this.props.type === "forward"){
+            return(
+                <div className="button"><p><Link to={this.props.link}>{this.props.text} &#8594;</Link></p></div>
+            );
+        } 
+        else if(this.props.type === "backwards"){
+            return(
+                <div className="button"><p><Link to={this.props.link}>&#8592; {this.props.text}</Link></p></div>
+            );
+        } else {
+            return(
+                <div className="button"><p><Link to={this.props.link}>{this.props.text}</Link></p></div>
+            );
+        }
     }
 }
 
 Navigator.propTypes = {
-    link: PropTypes.string,
+    link: PropTypes.string.isRequired,
     text: PropTypes.string,
+    type: PropTypes.string
 };
 
 export default Navigator;
