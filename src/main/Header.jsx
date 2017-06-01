@@ -11,6 +11,51 @@ class Header extends Component {
         this.state = {
             shouldShowSidebar: false,
         };
+
+        document.addEventListener("touchstart", this.handleTouchStart, false);        
+        document.addEventListener("touchmove", this.handleTouchMove, false);
+
+        this.xDown = null;
+        this.yDown = null;
+    }
+
+    handleTouchStart(evt){
+        this.xDown = evt.touches[0].clientX;
+        this.yDown = evt.touches[0].clientY;
+    }
+
+    handleTouchMove(evt){
+        if( !this.xDown || !this.yDown){
+            return;
+        }
+
+        let xUp = evt.touches[0].clientX;
+        let yUp = evt.touches[0].clientY;
+
+        let xDiff = this.xDown - xUp;
+        let yDiff = this.yDown - yUp;
+
+        if( Math.abs( xDiff ) > Math.abs( yDiff ) ){
+            if( xDiff > 0 ){
+                //left swipe
+                console.log("left");
+            } else {
+                //right swipe
+                console.log("right");
+            }
+        } else {
+            if( yDiff > 0 ) {
+                //swipe up 
+                console.log("up");
+            } else {
+                //swipe down
+                console.log("down");
+            }
+        }
+
+        this.xDown = null;
+        this.yDown = null;
+
     }
 
     handleSidebar(){
