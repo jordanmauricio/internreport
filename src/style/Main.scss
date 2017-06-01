@@ -39,9 +39,18 @@
             color:#fff;
         }
     }
+
+    @media(max-width:800px){
+        font-size:19px;
+        line-height:30px;
+    }
 }
 
 .wrapper--container {
     max-width:740px;
     margin:50px auto;
+
+    @media( max-width:800px){
+        padding:30px;
+    }
 }

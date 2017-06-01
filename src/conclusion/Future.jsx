@@ -28,7 +28,7 @@ class Future extends Component {
                 <p>Entertainia is a big project that the Ecommerce team is working on at the moment. This project is running Drupal as its CMS, and therefore if I would like to join the team in developing for this project, I would need to learn Drupal. This will most likely happen over the summer.</p>
 
                 <br/><strong>Isomorphic Applications</strong>
-                <p>These are JavaScript applications that can run on both the Frontend and the Backend. It’s more a methodology and way of writing code than anything else. It’s a very nice next step after learning Node, in order to combine React and Node and be able to create universal applications that can run on just about any device, written entirely by JavaScript.</p>
+                <p>These are JavaScript applications that can run on both the Frontend and the Backend. It’s more a methodology and way of writing code than anything else. It’s a very nice next step after learning Node, in order to combine React and Node and be able to create universal applications that can run on just about any device, written entirely with JavaScript.</p>
                 
                 <div className="nav-buttons">
                     <Navigator type="backwards" link="/conclusion"/>

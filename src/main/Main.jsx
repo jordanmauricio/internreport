@@ -8,6 +8,10 @@ import NotFound from "./NotFound";
 import "../style/Main.css";
 
 class Main extends Component {
+    componentDidUpdate(){
+        document.getElementsByTagName("body")[0].scrollTop = 0;
+    }
+
     render() {
         return (
             <div className="wrapper">

@@ -8,8 +8,8 @@ class TRIMM extends Component {
                 <h1>This is TRIMM</h1>
                 <p>TRIMM has been a B2B digital agency for over 20 years. Throughout these years, it has catapulted itself from a young company to the best digital agency in the East of the Netherlands. TRIMM has won several awards for their work: 3 AVA Awards, 2 Dutch Interactive Awards and 1 Marcom Award. In 2017 they also won EMERCE’s Best Digital Agency of the Netherlands, with 5 stars. This is not surprising considering that TRIMM’s clientele includes companies such as KPN, Philips, Ziggo, Uncarriers and KLM.</p>
 
-                <h3>The ecommerce team</h3>
-                <p>There are various teams that make up the entirety of TRIMM, of which I belonged to the E-commerce team. The team, ourselves, doesn’t focus solely on E-commerce websites such as Amazon or Bol, but websites where any sort of transaction takes place. This could be sites that instead of money use tokens, or even internal applications for companies.</p>
+                <h3>The Ecommerce team</h3>
+                <p>There are various teams that make up the entirety of TRIMM, of which I belonged to the Ecommerce team. The team, ourselves, doesn’t focus solely on Ecommerce websites such as Amazon or Bol, but websites where any sort of transaction takes place. This could be sites that instead of money use tokens, or even internal applications for companies.</p>
                 <p>The team consists of the following people:</p>
                 <ul>
                     <li>Arnoud Steenwijk (Back-end developer)</li>
