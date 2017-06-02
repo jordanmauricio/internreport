@@ -13,7 +13,7 @@ class Intro extends Component {
                     <li> The assignments that I worked on during my 6 months at TRIMM. There are 3 assignments that I will dive into in detail there, explaining just what exactly I contributed to.</li>
                     <li> And finally, the conclusion, where I will reflect on my time at TRIMM, followed by additional information and what I plan to do for the future after completing my internship.</li>
                 </ol>
-                <p><strong>Enjoy!</strong></p>
+                <p className="has-text-centered"><strong>Enjoy!</strong></p>
                 <div className="nav-buttons">
                     <Navigator type="backwards" link="/" text="Go Back"/>
                     <Navigator type="forward" link="/introduction/me" text="Go To About me"/>
