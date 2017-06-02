@@ -6,12 +6,34 @@ import "./Bulma.css";
 import "./style/App.css";
 
 class App extends Component {
+    constructor(){
+        super();
+
+        this.sidebarTrigger = this.sidebarTrigger.bind(this);
+
+        this.state = {
+            shouldSidebarOpen: false,
+        };
+    }
+
+    sidebarTrigger(direction){
+        switch(direction){
+        case "open":
+            this.setState({ shouldSidebarOpen: true });
+            break;
+        case "close":
+            this.setState({ shouldSidebarOpen: false });
+            break;
+        default:
+        }
+    }
+
     render() {
         return (
             <div className="app--wrapper">
-                <Header />
-                <Main />
-                <Footer />
+                <Header sidebarAction={this.state.shouldSidebarOpen}/>
+                <Main triggerSidebar={this.sidebarTrigger}/>
+                 <Footer />
             </div>
         );
     }
