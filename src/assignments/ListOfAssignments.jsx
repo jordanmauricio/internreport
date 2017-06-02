@@ -1,16 +1,18 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "../style/ListOfAssignments.css";
 
 class ListOfAssignments extends Component {
     render() {
         return (
             <div>
-                <ul>
-                    <li key="1"><Link to={"/assignments/unicarriers"}>Unicarriers Planning Tool</Link></li>
-                    <li key="2"><Link to={"/assignments/feedbacktool"}>Feedback Tool</Link></li>
-                    <li key="3"><Link to={"/assignments/internshipreport"}>Internship Report</Link></li>
-                    <li key="4"><Link to={"/assignments/extra"}>Additional Skills</Link></li>
-                </ul>
+                <Link to={"/assignments/unicarriers"}><div className="box"><article className="media"><div className="media-content"><p className="has-text-centered">Unicarriers Planning Tool</p></div></article></div></Link>
+                <br/>
+                <Link to={"/assignments/feedbacktool"}><div className="box"><article className="media"><div className="media-content"><p className="has-text-centered">Feedback Tool</p></div></article></div></Link>
+                <br />
+                <Link to={"/assignments/internshipreport"}><div className="box"><article className="media"><div className="media-content"><p className="has-text-centered">Internship Report</p></div></article></div></Link>
+                <br />
+                <Link to={"/assignments/extra"}><div className="box"><article className="media"><div className="media-content"><p className="has-text-centered">Additional Skills</p></div></article></div></Link>
             </div>
         );
     }
