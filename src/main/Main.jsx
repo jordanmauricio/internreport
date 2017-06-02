@@ -7,6 +7,7 @@ import Conclusion from "../conclusion/Conclusion";
 import NotFound from "./NotFound";
 import "../style/Main.css";
 import ReactTouchEvents from "react-touch-events";
+import { RouteTransition } from 'react-router-transition';
 
 class Main extends Component {
     componentDidUpdate(){
@@ -31,13 +32,24 @@ class Main extends Component {
             <ReactTouchEvents onSwipe={this.handleSidebar.bind(this)}>
                 <div className="wrapper">
                     <div className="wrapper--container content">
-                        <Switch>
-                            <Route exact path="/" component={Home}/>
-                            <Route path="/introduction" component={Introduction}/>
-                            <Route path="/assignments" component={Assignments}/>
-                            <Route path="/conclusion" component={Conclusion}/>
-                            <Route component={NotFound} />
-                        </Switch>
+                        <RouteTransition
+                            pathname={location.pathname}
+                            atEnter={{ translateX: 100}}
+                            atLeave={{ translateX: -100}}
+                            atActive={{ translateX: 0}}
+                            className="page-change"
+                            mapStyles={ styles => ({
+                                transform: `translateX(${styles.translateX}vw)`,
+                            })}
+                        >
+                            <Switch>
+                                <Route exact path="/" component={Home}/>
+                                <Route path="/introduction" component={Introduction}/>
+                                <Route path="/assignments" component={Assignments}/>
+                                <Route path="/conclusion" component={Conclusion}/>
+                                <Route component={NotFound} />
+                            </Switch>
+                        </RouteTransition>
                     </div>
                 </div>
             </ReactTouchEvents>

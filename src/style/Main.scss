@@ -54,3 +54,30 @@
         padding:30px;
     }
 }
+
+.page-change {
+    position: relative;
+
+    > div {
+        position:absolute;
+        margin-bottom: 50px;
+    }
+}
+
+// .page-change-enter{
+//     transform: translateX(-100vw);
+//     transition: transform 0.35s ease-in;
+
+//     &.page-change-enter-active{
+//         transform: translateX(0);
+//     }
+// }
+
+// .page-change-leave {
+//     transform: translateX(0);
+//     transition: transform 0.35s ease-out;
+
+//     &.page-change-leave-active{
+//         transform: translate(100vw);
+//     }
+// }

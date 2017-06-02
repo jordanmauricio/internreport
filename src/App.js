@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "./main/Header";
 import Main from "./main/Main";
-import Footer from "./main/Footer";
+// import Footer from "./main/Footer";
 import "./Bulma.css";
 import "./style/App.css";
 
@@ -33,7 +33,7 @@ class App extends Component {
             <div className="app--wrapper">
                 <Header sidebarAction={this.state.shouldSidebarOpen}/>
                 <Main triggerSidebar={this.sidebarTrigger}/>
-                 <Footer />
+                 {/*<Footer />*/}
             </div>
         );
     }
