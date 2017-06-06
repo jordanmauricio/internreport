@@ -7,7 +7,7 @@ import Conclusion from "../conclusion/Conclusion";
 import NotFound from "./NotFound";
 import "../style/Main.css";
 import ReactTouchEvents from "react-touch-events";
-import { RouteTransition } from 'react-router-transition';
+import { RouteTransition } from "react-router-transition";
 
 class Main extends Component {
     componentDidUpdate(){
@@ -28,9 +28,11 @@ class Main extends Component {
     }
 
     render() {
+        let name = location.pathname === "/" ? "wrapper boom" : "wrapper";
+
         return (
             <ReactTouchEvents onSwipe={this.handleSidebar.bind(this)}>
-                <div className="wrapper">
+                <div className={name}>
                     <div className="wrapper--container content">
                         <RouteTransition
                             pathname={location.pathname}
