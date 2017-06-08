@@ -144,8 +144,19 @@ $parallaxOffset: 75vh;
         justify-content: center;
         align-items: center;
         height: $parallaxOffset;
+        margin-bottom:-1px;
+
+        &__content {
+            h1 {
+                font-size:62px !important;
+                font-size: 8vw !important;
+                color:white !important;
+                text-shadow: 2px 2px 0 rgba(60, 60, 60, 0.8);
+            }
+        }
 
         > video {
+            background-color: rgb(255,242,178);
             width: auto;
             min-width: 100%;
             max-width: none;
@@ -155,6 +166,28 @@ $parallaxOffset: 75vh;
             left: 50%;
             transform: translate( -50%, -50% );
             z-index: -1;
+        }
+
+        & span:first-of-type {
+            color:white;
+            position:absolute;
+            width:0;
+            height:0;
+            bottom:0;
+            left:0;
+            border-bottom:100px solid white;
+            border-right:50vw solid transparent;
+        }
+
+        & span:last-of-type {
+            color:white;
+            position:absolute;
+            width:0;
+            height:0;
+            bottom:0;
+            right:0;
+            border-bottom:100px solid white;
+            border-left:50vw solid transparent;
         }
     }
 
