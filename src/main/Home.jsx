@@ -6,9 +6,11 @@ class Home extends Component {
     render() {
         return (
             <div className="home-header">
-                <video playsInline autoPlay muted loop id="home-video">
-                    <source src={video} type="video/mp4" />
-                </video>
+                <div className="video-bg">
+                    <video playsInline autoPlay muted loop id="home-video">
+                        <source src={video} type="video/mp4" />
+                    </video>
+                </div>
 
                 <div className="shrinkwrap">
                     <h1 className="center">Home</h1>
