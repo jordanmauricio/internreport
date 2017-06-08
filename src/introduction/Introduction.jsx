@@ -8,7 +8,7 @@ import NotFound from "../main/NotFound";
 class Introduction extends Component {
     render() {
         return (
-            <div>
+            <div className="shrinkwrap">
                 <Switch>
                     <Route exact path="/introduction" component={Intro}/>
                     <Route exact path="/introduction/me" component={Me}/>
