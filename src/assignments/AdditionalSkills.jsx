@@ -4,7 +4,7 @@ import Navigator from "../tools/Navigator";
 class AdditionalSkills extends Component {
     render() {
         return (
-            <div>
+            <div className="shrinkwrap">
                 <h1>But wait, there’s more!</h1>
                 <p>Alongside regular development tools, such as the ones I’ve used for the past few assignments, there are also tools for the process of web development. These tools help you with, for example, testing, version control, deployment, server management etc. In this section, I will talk about all of the different tools and techniques I’ve used and got familiar with. For the vast majority of these, I will continue to use them when possible even in my personal projects.</p>
 
