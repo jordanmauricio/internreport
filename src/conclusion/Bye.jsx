@@ -4,7 +4,7 @@ import Navigator from "../tools/Navigator";
 class Bye extends Component {
     render() {
         return (
-            <div>
+            <div className="shrinkwrap">
                 <h1>Fare-thee-well</h1>
                 <p>This has been my report. I would like to thank all my colleagues for their terrific help and guidance, both personal and professional, over the past few months. I now feel very prepared to enter the workforce due to my experience at TRIMM. If you would like to keep track of my progress, I have provided some links below, and also some shameless advertisements for the great work my colleagues are doing outside of their regular jobs.</p>
 

@@ -4,7 +4,7 @@ import Navigator from "../tools/Navigator";
 class Future extends Component {
     render() {
         return (
-            <div>
+            <div className="shrinkwrap">
                 <h1>Plans for the future</h1>
                 <p>A few weeks ago, Joeri had approached me to see if I would be willing to stay on as a developer workstudent for TRIMM, still as part of the Ecommerce team. I was more than happy to oblige, therefore for the upcoming few months I’ll be working part-time at TRIMM!</p>
 
