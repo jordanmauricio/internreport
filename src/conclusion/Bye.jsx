@@ -5,7 +5,6 @@ import VideoHeader from "../tools/VideoHeader";
 
 class Bye extends Component {
     render() {
-        const website = window.location.hostname;
         return (
             <div className="page--with-video-header">
                 <VideoHeader image={buhbye} bgColor="#452139" text="Fare-thee-well"/>

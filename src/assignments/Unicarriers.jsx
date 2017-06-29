@@ -8,7 +8,7 @@ class Unicarriers extends Component {
     render() {
         return (
             <div className="page--with-video-header">
-                <VideoHeader image={unicarriers} altText="Unicarriers Planning Tool" text="Unicarriers Planning Tool"/>
+                <VideoHeader image={unicarriers} altText="Unicarriers Planning Tool" text="Unicarriers Planning Tool" bgColor="#293239"/>
                 <div className="shrinkwrap">
                     <p>Unicarriers was the first project I had worked on when I started.
                     Unicarriers is a multi-billion dollar logistics vehicles company headquartered in Sweden, with other offices all over the European continent. They had given TRIMM the task to build their internal planning tool. This planning tool was meant to facilitate and enhance their company synergy by efficiently giving out jobs to their workers, and letting their managers see exactly what each worker is tasked to do. This tool would also need to take into account the various offices, specifically in Sweden, the United Kingdom, the Netherlands and Belgium. Each of these offices had their own unique methods to get the job done, which created a challenging opportunity to build a tool that all these different offices wouldn’t just like, but would willingly choose to use over the existing model.</p>

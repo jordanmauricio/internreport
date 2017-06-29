@@ -7,7 +7,7 @@ class Me extends Component {
     render() {
         return (
             <div className="page--with-video-header">
-                <VideoHeader image={curacao} altText="Curacao Harbor" text="Straight Outta Cura&#231;ao"/>
+                <VideoHeader image={curacao} altText="Curacao Harbor" text="Straight Outta Cura&#231;ao" bgColor="#9ac2f5"/>
                 <div className="shrinkwrap">
                     <p>My name is Jordan Mauricio, and I am a 22-year-old student from Cura&#231;ao. While growing up on this gorgeous island I had found a fondness for web development and programming. With this passion, I had signed up for the Creative Media and Game Technologies major (formerly Art and Technology) at the Saxion University of Applied Sciences in Enschede, the Netherlands. This report is my chosen method to express how my months working for TRIMM has been as it combines just about all the different aspects that I wanted to achieve.</p>
 
