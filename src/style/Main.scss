@@ -123,6 +123,14 @@
     height: 100vh;
     z-index: -1;
 
+    > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+
     > video {
         position: absolute;
         top: 0;
@@ -154,6 +162,16 @@ $parallaxOffset: 75vh;
                 color:white !important;
                 text-shadow: 2px 2px 0 rgba(60, 60, 60, 0.8);
             }
+        }
+
+        > img {
+            background-color: rgb(255,242,178);
+            width: auto;
+            min-height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate( -50%, -50% );
+            z-index: -1;
         }
 
         > video {

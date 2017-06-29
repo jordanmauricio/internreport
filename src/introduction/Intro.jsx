@@ -1,22 +1,13 @@
 import React, { Component } from "react";
 import Navigator from "../tools/Navigator";
-import video from "../videos/home.mp4";
+import welcome from "../videos/welcome.webp";
+import VideoHeader from "../tools/VideoHeader";
 
 class Intro extends Component {
     render() {
         return (
             <div className="page--with-video-header">
-                 <div className="video-header">
-                        {/*<div className="overlay">*/}
-                            <video playsInline autoPlay muted loop id="home-video">
-                                <source src={video} type="video/mp4" />
-                            </video>
-                        {/*</div>*/}
-                    <div className="video-header__content">
-                        <h1>Welcome,</h1>
-                    </div>
-                    <span></span><span></span>
-                </div>
+                <VideoHeader image={welcome} bgColor="#b7bbc2"/>
                 <div className="shrinkwrap">
                     <p>This report has been written as part of my time as an intern at TRIMM. From February 6th until June 30th I have been working as a front-end developer primarily, and back-end developer when possible within the E-commerce team. During my time there I have worked on some terrific projects and met some great people. My team was more than happy to help me whenever I requested it, and I couldn’t have made my time there as rewarding as it was without their help.</p>
                     <p>The report has been broken down into 3 logical parts:</p>
