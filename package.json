@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "next": "^2.4.0",
+    "prop-types": "^15.5.10",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-router": "^4.0.0",
@@ -16,8 +16,6 @@
     "bulma": "^0.4.0",
     "chai": "^3.5.0",
     "node-sass": "^4.5.2",
-    "now": "^6.2.0",
-    "now-serve": "^0.5.1",
     "npm-run-all": "^4.0.2",
     "postcss": "^5.2.16",
     "postcss-cli": "^3.0.0",
